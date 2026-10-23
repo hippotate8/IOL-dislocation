@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://수정체탈구.com/sitemap.xml
