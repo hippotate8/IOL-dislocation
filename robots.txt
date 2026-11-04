@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://수정체탈구.com/sitemap.xml
-#DaumWebMasterTool:fb5f113881d439ac3428274c6ae44de73324d67fb81aac46bdb24940f8975005:ObU+sFQzTvdXbIlCz16kkg==
+#DaumWebMasterTool:c9218554407b12f3e46644b55a09235eccbe560faa068d7c74498a0f0698f82b:ObU+sFQzTvdXbIlCz16kkg==
