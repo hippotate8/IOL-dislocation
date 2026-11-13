@@ -5,9 +5,9 @@
 /* Research and academic activity section – scoped styling */
 .research-area{padding:80px 0;background:#f6fafb;color:#173548}
 .research-area .research-lead{max-width:790px;color:#58707a;font-size:17px;line-height:1.85;margin:12px 0 28px}
-.research-area .paper-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.research-area .paper-card{overflow:hidden;border:1px solid #d8e6e9;background:white;border-radius:19px;box-shadow:0 10px 32px rgba(18,58,71,.055);display:flex;flex-direction:column}
-.research-area .paper-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;background:#ecf3f5}
+.research-area .paper-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}
+.research-area .paper-card{overflow:hidden;border:1px solid #d8e6e9;background:white;border-radius:19px;box-shadow:0 10px 32px rgba(18,58,71,.055);display:flex;flex-direction:column;height:auto}
+.research-area .paper-card img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center top;background:#f8fbfc;padding:14px}
 .research-area .paper-content{padding:22px;flex:1;display:flex;flex-direction:column;gap:10px}
 .research-area .paper-content h3{margin:0;font-size:19px;line-height:1.45;color:#153d4f}
 .research-area .paper-meta{font-size:12px;color:#476e7c;font-weight:700;line-height:1.5}
@@ -16,16 +16,17 @@
 .research-area .paper-link{margin-top:auto;display:inline-flex;align-items:center;gap:6px;color:#096c7b;font-weight:800;text-decoration:underline;text-underline-offset:4px;font-size:14px;padding-top:9px}
 .research-area .research-notice{margin:20px 0 0;font-size:13px;line-height:1.7;color:#657c84}
 .academic-area{padding:76px 0;background:#fff}
-.academic-area .academic-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
-.academic-area .academic-photo{width:100%;height:100%;max-height:390px;object-fit:cover;border-radius:16px}
-.academic-area .academic-panel{padding:28px;background:#eaf6f5;border-radius:16px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.academic-area .academic-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start}
+.academic-area .academic-photo-wrap,.academic-area .secondary-photo-wrap{background:#fff;border:1px solid #d8e6e9;border-radius:18px;overflow:hidden}
+.academic-area .academic-photo,.academic-area .secondary-photo{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center top;background:#fff}
+.academic-area .academic-panel{padding:28px;background:#eaf6f5;border-radius:16px;display:flex;flex-direction:column;justify-content:flex-start;gap:14px}
 .academic-area .academic-panel h3{font-size:25px;line-height:1.45;margin:0;color:#163f4f}
 .academic-area .academic-panel p{line-height:1.85;color:#416674;margin:0}
-.academic-area .secondary-photo{margin-top:18px;width:100%;max-height:210px;object-fit:cover;border-radius:12px}
+.academic-area .secondary-photo-wrap{margin-top:18px}
 .gallery-area{padding:76px 0;background:#f6fafb}
-.gallery-area .gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
-.gallery-area figure{margin:0;background:#fff;border:1px solid #d8e6e9;border-radius:17px;overflow:hidden}
-.gallery-area figure img{display:block;width:100%;aspect-ratio:4/4;object-fit:contain;background:#fff}
+.gallery-area .gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}
+.gallery-area figure{margin:0;background:#fff;border:1px solid #d8e6e9;border-radius:17px;overflow:hidden;display:flex;flex-direction:column;align-self:start}
+.gallery-area figure img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:#fff}
 .gallery-area figcaption{padding:14px 16px;color:#46616c;line-height:1.6;font-size:13px}
 .gallery-area .gallery-heading{margin:29px 0 15px;font-size:20px;color:#153d4f}
 .gallery-area .research-disclaimer{font-size:13px;line-height:1.8;color:#526977;margin-top:22px}
@@ -77,11 +78,11 @@
 <h2 id="academic-title">학술대회 발표 및 학술 교류</h2>
 <p class="intro">2026년 한국백내장굴절수술학회(KSCRS) 학술대회 발표 현장입니다.</p>
 <div class="academic-grid">
-<div><img alt="2026 KSCRS Annual Symposium 학술대회 연단에서 발표하는 예스안과 의료진" class="academic-photo" height="900" loading="lazy" src="assets/kscrs-speaker-2026.jpg" width="1300"/></div>
+<div class="academic-photo-wrap"><img alt="2026 KSCRS Annual Symposium 학술대회 연단에서 발표하는 예스안과 의료진" class="academic-photo" height="900" loading="lazy" src="assets/kscrs-speaker-2026.jpg" width="1300"/></div>
 <div class="academic-panel"><h3>2026 KSCRS Annual Symposium</h3>
 <p>백내장·인공수정체 수술과 관련된 임상 경험 및 연구 내용을 학술대회에서 공유하는 현장입니다. 의료진의 학술활동과 관련 논문을 함께 소개합니다.</p>
 <p style="font-size:13px">학술대회 현장 사진 제공 · 2026년</p>
-<img alt="2026 KSCRS 학술대회 발표장과 청중을 촬영한 사진" class="secondary-photo" height="500" loading="lazy" src="assets/kscrs-audience-2026.jpg" width="1200"/>
+<div class="secondary-photo-wrap"><img alt="2026 KSCRS 학술대회 발표장과 청중을 촬영한 사진" class="secondary-photo" height="500" loading="lazy" src="assets/kscrs-audience-2026.jpg" width="1200"/></div>
 </div>
 </div>
 </div>
